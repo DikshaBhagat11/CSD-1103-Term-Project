@@ -1,0 +1,188 @@
+/*
+Author: Diksha Bhagat
+Date: 30/5/2024
+File name: C4 Tutorial
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #b3b60d;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    float: right;
+}
+
+/* Style rules for header */
+header {
+    width: 25%;
+    float: left;
+    background-color: #dadd11;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 115px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style rules for navigation area */
+nav {
+    width: 70%;
+    float: right;
+    margin: 5em 3em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #000000;
+}
+
+/* Style rules for main content */
+main {
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+    display: block;
+}
+
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+}
+
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.offer-details {
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.offer-details h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #2d8d06fd;
+}
+
+.price {
+    font-size: 20px;
+    color: #e74c3c;
+}
+
+.discounted-price {
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+.description {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.features {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+    color: #555;
+    font-size: 16px;
+}
+
+.features li {
+    margin-bottom: 5px;
+}
+
+.buy-now {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.buy-now:hover {
+    background-color: #c0392b;
+}
+
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+    margin-top: 25px;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
