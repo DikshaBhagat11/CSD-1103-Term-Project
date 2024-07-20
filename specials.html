@@ -8,29 +8,44 @@ c0936085
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specials</title>
+    <title>Specials - Mix Mates</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 
-    <div id="container">
-
-        <!-- Use the header area for the website name or logo -->
-        <header>
-            <a href="index.html"><img src="images/mix-mates-logo.png" alt="Mix Mates logo"></a>
-        </header>
-
+    <!-- Use the header area for the website name or logo -->
+    <header class="main-navigation">
+        <div>
+            <a href="index.html"><img src="images/mix-mates-logo.png" class="logo" alt="Mix Mates logo"></a>
+        </div>
         <!-- Use the nav area to add hyperlinks to other pages within the website -->
         <nav>
-            <ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="collection.html">Collection</a></li>
                 <li><a href="specials.html">Specials</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+    </header>
+
+    <div id="container">
 
         <!-- Use the main area to add the main content of the webpage -->
         <main>
@@ -68,6 +83,8 @@ c0936085
         </footer>
 
     </div>
+
+    <script src="js/scripts.js"></script>
 
 </body>
 

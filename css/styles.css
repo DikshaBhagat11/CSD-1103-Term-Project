@@ -13,177 +13,762 @@ footer,
 h1,
 div,
 img {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 #container {
-    width: 75%;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4rem;
 }
 
 /* Style rules for body and images */
 body {
-    background-color: #b3b60d;
+  background-color: #b3b60d;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
-    max-width: 100%;
-    display: block;
-    float: right;
+  max-width: 100%;
+  display: block;
+}
+
+#hero {
+  background: #fff;
+  padding: 3rem 3rem 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#hero img {
+  border-radius: 8px;
 }
 
 /* Style rules for header */
-header {
-    width: 25%;
-    float: left;
-    background-color: #dadd11;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 115px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.logo {
+  width: 140px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 2rem;
 }
 
 /* Style rules for navigation area */
 nav {
-    width: 70%;
-    float: right;
-    margin: 5em 3em 0 0;
+  margin: 0 3em 0 0;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: right;
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
 }
 
 nav li {
-    display: inline-block;
-    font-size: 1.1em;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-weight: bold;
+  display: inline-block;
+  font-size: 1.1em;
+
+  font-weight: bold;
 }
 
 nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
+  display: block;
+  color: #6f7026;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
 }
 
 nav li a:hover {
-    background-color: #000000;
+  background-color: #e9ea9b;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 4px;
+  width: 25px;
+  background: #6f7026;
+  margin: 4px 0;
+  border-radius: 2px;
 }
 
 /* Style rules for main content */
 main {
-    clear: left;
-    background-color: #fff;
-    padding: 2%;
-    font-size: 1.25em;
-    display: block;
+  clear: left;
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  display: block;
 }
 
 .action {
-    font-size: 1.35em;
-    color: #666600;
-    font-weight: bold;
+  font-size: 1.35em;
+  color: #666600;
+  font-weight: bold;
+}
+
+#intro {
+  padding: 1rem 2rem;
 }
 
 /* Style rules for Specials page */
 .offer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .offer-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .offer-details {
-    margin-top: 20px;
-    margin-left: 20px;
-    max-width: 500px;
+  margin-top: 20px;
+  margin-left: 20px;
+  max-width: 500px;
 }
 
 .offer-details h1 {
-    margin-top: 0;
-    font-size: 24px;
-    color: #2d8d06fd;
+  margin-top: 0;
+  font-size: 24px;
+  color: #2d8d06fd;
 }
 
 .price {
-    font-size: 20px;
-    color: #e74c3c;
+  font-size: 20px;
+  color: #e74c3c;
 }
 
 .discounted-price {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .original-price {
-    text-decoration: line-through;
-    color: #888;
-    margin-left: 10px;
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
 }
 
 .description {
-    margin: 15px 0;
-    font-size: 20px;
-    color: #555;
+  margin: 15px 0;
+  font-size: 20px;
+  color: #555;
 }
 
 .features {
-    list-style-type: disc;
-    margin: 10px 0 20px 20px;
-    color: #555;
-    font-size: 16px;
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
+  color: #555;
+  font-size: 16px;
 }
 
 .features li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .buy-now {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .buy-now:hover {
-    background-color: #c0392b;
+  background-color: #c0392b;
 }
 
 /* Style rules for footer content */
 footer p {
-    font-size: 0.75em;
-    text-align: center;
-    color: #fff;
-    padding: 0 1em;
-    margin-top: 25px;
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 0 1em;
+  margin-top: 25px;
 }
 
 footer p a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* About Page */
+
+/* Additional Styles for About Us page */
+#hero-about {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero-about img {
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+#about-content {
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  display: block;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+#about-content h1,
+#about-content h2 {
+  color: #2d8d06fd;
+  font-weight: bold;
+}
+
+#about-content p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+
+/* Teams Page */
+
+/* Additional Styles for Team page */
+#hero-team {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero-team img {
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+#team-content {
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  display: block;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+#team-content h1 {
+  color: #2d8d06fd;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto 40px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  border-radius: 50%;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.team-member h2 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+}
+
+.team-member h3 {
+  color: #666600;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #555;
+  line-height: 1.6em;
+  font-size: 1em;
+}
+
+/*  Training Page */
+
+/* Additional Styles for Training page */
+#hero-training {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero-training img {
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+#training-content {
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  display: block;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+#training-content h1 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.training-program {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.training-program img {
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.training-program h2 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.training-program p {
+  color: #555;
+  line-height: 1.6em;
+  font-size: 1em;
+}
+
+/* Media Page */
+
+/* Additional Styles for Media page */
+#hero-media {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero-media img {
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+#media-content {
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  display: block;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+#media-content h1 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.media-item {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.media-item img {
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.media-item h2 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.media-item p {
+  color: #555;
+  line-height: 1.6em;
+  font-size: 1em;
+}
+
+/* FAQS Page */
+
+/* Additional Styles for FAQ page */
+#hero-faq {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero-faq img {
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+#faq-content {
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  display: block;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+#faq-content h1 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 40px;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h2 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #555;
+  line-height: 1.6em;
+  font-size: 1em;
+}
+
+/* Contact Page */
+/* Additional Styles for Contact page */
+#hero-contact {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#hero-contact img {
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+#contact-content {
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  display: block;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+#contact-content h1 {
+  color: #2d8d06fd;
+
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2d8d06fd;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  height: 40px;
+}
+
+.form-group button {
+  background-color: #2d8d06fd;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+.form-group button:hover {
+  background-color: #256c04;
+}
+
+.active {
+  display: block;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  #container {
+    width: 90%;
+  }
+
+  #hero {
+    padding: 2rem 1rem 1rem;
+  }
+
+  header {
+    width: 100%;
+    float: none;
+  }
+
+  nav ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  nav li a {
+    padding: 10px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger-active {
+    margin-top: 1rem;
+  }
+
+  #hero-about,
+  #hero-team,
+  #hero-training,
+  #hero-media,
+  #hero-faq,
+  #hero-contact {
+    padding: 10px;
+  }
+
+  #about-content,
+  #team-content,
+  #training-content,
+  #media-content,
+  #faq-content,
+  #contact-content {
+    padding: 5%;
+  }
+
+  .team-member,
+  .training-program,
+  .media-item,
+  .faq-item {
+    max-width: 100%;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet-desktop {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  nav li {
+    font-size: 1em;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 5px;
+  }
+
+  .form-group button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .tablet-desktop {
+    display: none;
+  }
+
+}
+
+/* Product Training Schedule table */
+#product-training {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#product-training h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#training-table {
+  border: 3px solid #000;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#training-table caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#training-table th,
+#training-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#training-table th {
+  border-bottom: 3px solid #000;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#training-table tbody tr:nth-child(even) {
+  background-color: #b5e7a0;
+}
+
+#training-table tbody tr:nth-child(odd) {
+  background-color: #e3eaa7;
+}
+
+#training-table tbody tr:hover {
+  background-color: #fff;
+}
+
+@media (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet-desktop {
+    display: block;
+  }
 }
