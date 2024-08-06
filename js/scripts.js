@@ -1,3 +1,9 @@
+/*
+Author: Diksha Bhagat
+Date: 20/7/2024
+File name: CSD-1103 Term Project
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Dom Loaded");
   const hamburger = document.getElementById("hamburger");
